@@ -1,0 +1,111 @@
+/* leaderboard.css */
+
+/* Table Styling */
+
+body {
+  background: linear-gradient(rgb(6, 57, 13), rgb(6, 57, 13));
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+h1 {
+  color:#ffff;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 70px;
+  text-align: center;
+  padding: 20px;
+  margin: 40px;
+}
+
+#leaderboard {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Press Start 2P', cursive;
+  margin: 40px;
+}
+#boxes { 
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    border: 1px solid transparent;
+    padding: 20px;
+}
+#leaderboard th {
+  font-family: 'Press Start 2P', cursive;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 8px;
+  text-align: left;
+  color: white; /* Add this line to set the text color to black */
+}
+
+#leaderboard td {
+  border: 1px solid transparent;
+  font-family: 'Press Start 2P', cursive;
+  padding: 8px;
+  color: red; /* Add this line to set the text color to black */
+}
+
+/* Form Styling */
+#addForm label {
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 5px;
+  margin: 40px;
+}
+
+#addForm input[type="text"],
+#addForm input[type="number"] {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #080707;
+  border-radius: 3px;
+  margin: 40px;
+}
+
+#addForm button[type="submit"] {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#addForm button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
